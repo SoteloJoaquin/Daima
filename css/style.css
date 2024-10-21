@@ -22,14 +22,16 @@ body {
   justify-content: space-between;
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 40px;
   font-weight: 800;
 }
+
 .text-center {
   text-align: center;
 }
+
 .font-bold {
   font-weight: bold;
 }
@@ -128,7 +130,6 @@ header {
   margin: 10px 0;
   font-size: 36px;
   font-weight: 800;
-
 }
 
 .btn {
@@ -151,10 +152,10 @@ header {
 
 /* SECTION SERIES y PELICULAS */
 .title-seccion {
-  text-align: center;;
+  text-align: center;
   font-size: 40px;
   font-weight: 800;
-  font-family: 'comic neue', sans-serif;
+  font-family: 'Comic Neue', sans-serif;
 }
 
 .container-seccion {
@@ -183,6 +184,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+
 .card-seccion:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
@@ -246,12 +248,12 @@ th {
   font-size: 13px;
 }
 
-.td-img{
+.td-img {
   width: 50px;
   height: 50px;
   object-fit: cover;
-
 }
+
 h2 {
   color: #333;
 }
@@ -289,32 +291,32 @@ button {
 button:hover {
   background-color: #218838;
 }
+
 .container-contacto {
   display: flex;
-  justify-content: center; /* Espacio entre el formulario y el mapa */
-  align-items: flex-start; /* Alinea ambos elementos al principio */
-  margin-top: 20px; /* Espacio arriba de la sección */
+  justify-content: center; 
+  align-items: flex-start; 
+  margin-top: 20px; 
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .form-container {
-  flex: 1; /* Ocupa un espacio proporcional en la flexbox */
-  margin-right: 20px; /* Espacio a la derecha del formulario */
+  flex: 1; 
+  margin-right: 20px; 
 }
 
 .map-container {
-  flex: 1; /* Ocupa un espacio proporcional en la flexbox */
+  flex: 1; 
 }
 
 iframe {
-  width: 100%; /* Asegura que el iframe ocupe todo el contenedor */
-  height: 350px; /* Altura fija para el mapa */
+  width: 100%; 
+  height: 350px; 
   border: 0;
   border-radius: 5px;
 }
-
 
 /* FOOTER */
 footer {
@@ -340,3 +342,76 @@ footer {
   color: #ff9800;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  .btn {
+    margin: 20px 0;
+  }
+
+  .card-text {
+    font-size: 28px;
+  }
+
+  .card-title {
+    font-size: 32px;
+  }
+
+  .title-seccion, .title {
+    font-size: 32px;
+  }
+
+  .col {
+    min-width: 100%; 
+  }
+
+  .container-contacto {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .form-container, .map-container {
+    margin-right: 0; 
+    margin-bottom: 20px; 
+  }
+  iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title, .title-seccion {
+    font-size: 24px; 
+  }
+
+  .card-title {
+    font-size: 28px; 
+  }
+
+  .card-text {
+    font-size: 24px; 
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
